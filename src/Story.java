@@ -1,14 +1,14 @@
 import java.util.Scanner;
 public class Story {
 
-    string usrAnswr;
+    String usrAnswr;
     int questionNum;
 
-    public static void setUsrAnswr(string usrAnswr) {
+    public static void setUsrAnswr(String usrAnswr) {
         usrAnswr = usrAnswr;
     }
 
-    public static string getUsrAnswr() {
+    public static String getUsrAnswr() {
         return usrAnswr;
     }
 
