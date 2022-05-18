@@ -2,7 +2,6 @@
 import java.util.Scanner;
 public class Player {
     String usrName;
-    string usrAnswr;
     int playerNum;
     int grade;
     String gradeLetter;
@@ -38,13 +37,8 @@ public class Player {
 
 
 
-    public static void setUsrAnswr(string usrAnswr) {
-        usrAnswr = usrAnswr;
-    }
 
-    public static string getUsrAnswr() {
-        return usrAnswr;
-    }
+
 
 
     public void gradeLetter() {
