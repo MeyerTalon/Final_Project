@@ -42,12 +42,13 @@ public class Story {
             setUsrAnswer = kybd.nextLine();
         } }
 
-        if (usr.Answer.equals("Fight") && playerAttribute[0] > obstacleAttribute[0]) {
+        /
+        */if (usr.Answer.equals("Fight") && playerAttribute[0] > obstacleAttribute[0]) {
             grade++;
         }
         else {
             grade--;
-        }
+        } */
     }
 
 
