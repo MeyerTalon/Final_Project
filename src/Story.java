@@ -42,6 +42,7 @@ public class Story {
             setUsrAnswer = kybd.nextLine();
         } }
 
+
         if (usr.Answer.equals("Fight") && playerAttribute[0] > obstacleAttribute[0]) {
             grade++;
         }
