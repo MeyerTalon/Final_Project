@@ -2,7 +2,7 @@ public class Dice {
     private int roll;
 
     public Dice() {
-        this.roll = (int) 6*Math.random()+1;
+        this.roll = (int) (Math.random()*6)+1;
     }
     public int getRoll() {
         return roll;

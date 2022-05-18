@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Story {
+    public static void main() {
 
     string usrAnswr;
     int questionNum;
@@ -53,4 +54,5 @@ public class Story {
 
 
 
+    }
 }
