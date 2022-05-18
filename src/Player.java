@@ -1,12 +1,14 @@
+
+import java.util.Scanner;
 public class Player {
-    string usrName;
+    String usrName;
     string usrAnswr;
     int playerNum;
     int grade;
-    string gradeLetter;
-    Int playerAttribute[] = new int[5];
+    String gradeLetter;
+    int playerAttribute[] = new int[5];
 
-    public static void setGrade() {
+    public void setGrade() {
         grade = playerAttribute[0];
         for (int i = 0; i < playerAttribute.length; i++) {
             if (playerAttribute[i] > grade) {
@@ -15,29 +17,37 @@ public class Player {
         }
     }
 
-    public static int getGrade() {
-        return grade;
+    public void usrName() {
+    Scanner usrNameKybd = new Scanner(System.in);
+    usrName = usrNameKybd.nextLine();
     }
 
-    public static void setGradeLetter(String Letter) {
-        gradeLetter = Letter;
-    }
-
-    public static String getUsrName() {
+    public static string getUsrName() {
         return userName;
     }
 
 
-    public static void setUsrAnswr(String usrAnswr) {
+    public static int getGrade() {
+        return grade;
+    }
+
+    public void setGradeLetter(String Letter) {
+        gradeLetter = Letter;
+    }
+
+
+
+
+    public static void setUsrAnswr(string usrAnswr) {
         usrAnswr = usrAnswr;
     }
 
-    public static String getUsrAnswr() {
+    public static string getUsrAnswr() {
         return usrAnswr;
     }
 
 
-    public static void gradeLetter() {
+    public void gradeLetter() {
         if (getGrade() >= 100) {
             setGradeLetter("A+");
         }
