@@ -1,8 +1,8 @@
-public class DiceRoll {
+public class Dice {
     private int roll;
 
-    public DiceRoll() {
-        this.roll = (int) 6*(Math.random())+1;
+    public Dice() {
+        this.roll = (int) 6*Math.random()+1;
     }
     public int getRoll() {
         return roll;
