@@ -26,9 +26,8 @@ public class Player {
 
 
     //User name;
-    public void usrName() {
-        Scanner usrNameKybd = new Scanner(System.in);
-        usrName = usrNameKybd.nextLine();
+    public void setUsrName(String usrName1) {
+        this.usrName = usrName1;
     }
 
     public String getUsrName() {
