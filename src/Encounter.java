@@ -22,6 +22,10 @@ public class Encounter {
     {
         return question;
     }
+    public String getApproach()
+    {
+        return approach;
+    }
     public String getOutcome() {
         String output = new String();
         if (win) {
@@ -35,6 +39,7 @@ public class Encounter {
     {
         choice = c;
     }
+
     public String toString() {
         String output = new String();
         output = approach + question;
