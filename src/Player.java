@@ -21,8 +21,8 @@ public class Player {
     usrName = usrNameKybd.nextLine();
     }
 
-    public static string getUsrName() {
-        return userName;
+    public static String getUsrName() {
+        return usrName;
     }
 
 
