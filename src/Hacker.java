@@ -6,9 +6,9 @@ public class Hacker extends Player {
 
     @Override
     public void setPlayerAttributeStatus() {
-        playerAttribute[0] = -30; //fight, strength
-        playerAttribute[1] = 30; //flee, speed
-        playerAttribute[2] = 40; //negotiate, cunning
+        playerAttributeStatus[0] = -30; //fight, strength
+        playerAttributeStatus[1] = 30; //flee, speed
+        playerAttributeStatus[2] = 40; //negotiate, cunning
     }
 
     /* Strength, Cunning,  Speed*/
