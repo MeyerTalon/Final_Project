@@ -13,7 +13,7 @@ public class Display {
                 BufferedImage img = null;
 
                 try {
-                    img = ImageIO.read(getClass().getResource("/image.jpg"));
+                    img = ImageIO.read(getClass().getResource("/sad keanu.jpg"));
                 } catch (IOException e) {
                     e.printStackTrace();
                     System.exit(1);
