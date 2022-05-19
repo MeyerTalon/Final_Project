@@ -3,7 +3,7 @@ public class Obstacle {
     private String obstacleName;
     public Obstacle()
     {
-        this.attributes = new int[5];
+        this.attributes = new int[3];
         this.obstacleName = "";
     }
     public Obstacle(int[] a, String oN)
