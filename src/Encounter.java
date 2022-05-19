@@ -1,21 +1,27 @@
 import java.util.Scanner;
 public class Encounter {
-    private String prompt;
+    private String approach;
+    private String question;
+    private String victory;
     private Obstacle obstacle;
 
     public Encounter() {
-        prompt = "";
+        approach = "";
+        question = "";
+        victory = "";
         obstacle = new Obstacle();
     }
 
-    public Encounter(String p, Obstacle o) {
-        prompt = p;
+    public Encounter(String a, String q, String v, Obstacle o) {
+        approach = a;
+        question = q;
+        victory = v;
         obstacle = o;
     }
 
     public String toString() {
         String output = new String();
-        output = prompt;
+        output = approach + question + victory;
         return output;
     }
 }
