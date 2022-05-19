@@ -10,6 +10,8 @@ public class Player {
     public String[] playerAttributes = new String[3];
 
 
+    //create three getters for each attribute
+
     // Attributes;
     public void setPlayerAttributes() {
         playerAttributes[0] = "Strength"; //fight
