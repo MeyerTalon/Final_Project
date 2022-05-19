@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class Encounter {
+    // Initial vars
     private String approach;
     private String question;
     private String outocome;
@@ -7,17 +8,31 @@ public class Encounter {
     private Obstacle obstacle;
     private int choice;
 
+    // Constructors
     public Encounter() {
         approach = "";
         question = "";
         obstacle = new Obstacle();
     }
-
     public Encounter(String a, String q, Obstacle o) {
         approach = a;
         question = q;
         obstacle = o;
     }
+
+    // Setters
+    public void setChoice(int c)
+    {
+        choice = c;
+    }
+    public void setWin()
+    {
+        if (getChoice() == 1) {
+            if ()
+        }
+    }
+
+    // Getters
     public String getQuestion()
     {
         return question;
@@ -25,6 +40,10 @@ public class Encounter {
     public String getApproach()
     {
         return approach;
+    }
+    public int getChoice()
+    {
+        return choice;
     }
     public String getOutcome() {
         String output = new String();
@@ -35,11 +54,8 @@ public class Encounter {
         }
         return output;
     }
-    public void setChoice(int c)
-    {
-        choice = c;
-    }
 
+    // To String
     public String toString() {
         String output = new String();
         output = approach + question;

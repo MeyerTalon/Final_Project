@@ -1,6 +1,9 @@
 public class Obstacle {
+    // initial vars
     private int[] attributes;
     private String obstacleName;
+
+    // Constructors
     public Obstacle()
     {
         this.attributes = new int[3];
@@ -11,6 +14,7 @@ public class Obstacle {
         attributes = a;
         obstacleName = oN;
     }
+    // Setters
     public void setAttributes(int[] setAttributes)
     {
         attributes = setAttributes;
@@ -19,6 +23,8 @@ public class Obstacle {
     {
         obstacleName = setObstacleName;
     }
+
+    //Getters
     public int[] getAttributes()
     {
         return attributes;
@@ -27,6 +33,9 @@ public class Obstacle {
     {
         return obstacleName;
     }
+    //Create 3 getters for each attribute
+
+    //To String
     public String toString()
     {
         String output = new String();
