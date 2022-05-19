@@ -5,6 +5,7 @@ public class Encounter {
     private String outocome;
     private boolean win;
     private Obstacle obstacle;
+    private int choice;
 
     public Encounter() {
         approach = "";
@@ -21,9 +22,15 @@ public class Encounter {
     {
         String output = new String();
         if (win) {
-            output = "You defeated " + obstacle.getObstalceName() + ". Congratulations!";
+            output = "You defeated " + obstacle.getObstacleName() + ". Congratulations!";
+        } else {
+            output = "You are a FAILURE! You failed to beat " + obstacle.getObstacleName();
         }
         return output;
+    }
+    public void setChoice(int c)
+    {
+        choice = c;
     }
     public String toString() {
         String output = new String();
