@@ -3,7 +3,7 @@ public class Obstacle {
     private String obstacleName;
     public Obstacle()
     {
-        this.attributes = new int[5];
+        this.attributes = new int[3];
         this.obstacleName = "";
     }
     public Obstacle(int[] a, String oN)
@@ -30,11 +30,9 @@ public class Obstacle {
     public String toString()
     {
         String output = new String();
-        output = getObstacleName() + " Stats: /nCunning:" + attributes[0] +
-                "/nStrength: " + attributes[1] +
-                "/nSpeed: " + attributes[2] +
-                "/nEndurance: " + attributes[3] +
-                "/nCharm: " + attributes[4];
+        output = getObstacleName() + " Stats: /nStrength: " + attributes[0] +
+                "/nSpeed: " + attributes[1] +
+                "/nCunning: " + attributes[2];
         return output;
     }
 }
