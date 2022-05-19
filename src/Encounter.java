@@ -18,8 +18,11 @@ public class Encounter {
         question = q;
         obstacle = o;
     }
-    public String getOutcome()
+    public String getQuestion()
     {
+        return question;
+    }
+    public String getOutcome() {
         String output = new String();
         if (win) {
             output = "You defeated " + obstacle.getObstacleName() + ". Congratulations!";
