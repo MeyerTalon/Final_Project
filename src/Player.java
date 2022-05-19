@@ -1,17 +1,30 @@
 
 import java.util.Scanner;
 public class Player {
-    String usrName;
-    int playerNum;
-    int grade;
-    String gradeLetter;
-    int playerAttribute[] = new int[5];
+    public String usrName;
+    public int playerNum;
+    public int grade;
+    public String gradeLetter;
+    public int[] playerAttributeStatus = new int[3];
+    public String[] playerAttributes = new String[3];
+
+    public void setPlayerAttributes() {
+        playerAttributes[0] = "Strength"; //fight
+        playerAttributes[1] = "Speed"; //flee
+        playerAttributes[2] = "Cunning"; //negotiate
+    }
+
+    public void setPlayerAttributeStatus() {
+        playerAttributeStatus[0] = 0; //fight
+        playerAttributeStatus[1] = 0; //flee
+        playerAttributeStatus[2] = 0; //negotiate
+    }
 
     public void setGrade() {
-        grade = playerAttribute[0];
-        for (int i = 0; i < playerAttribute.length; i++) {
-            if (playerAttribute[i] > grade) {
-                grade = playerAttribute[i];
+        grade = playerAttributeStatus[0];
+        for (int i = 0; i < playerAttributeStatus.length; i++) {
+            if (playerAttributeStatus[i] > grade) {
+                grade = playerAttributeStatus[i];
             }
         }
     }
@@ -21,12 +34,11 @@ public class Player {
     usrName = usrNameKybd.nextLine();
     }
 
-    public static String getUsrName() {
+    public String getUsrName() {
         return usrName;
     }
 
-
-    public static int getGrade() {
+    public int getGrade() {
         return grade;
     }
 
