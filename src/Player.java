@@ -1,6 +1,7 @@
 
 import java.util.Scanner;
 public class Player {
+    //Variables;
     public String usrName;
     public int playerNum;
     public int grade;
@@ -8,6 +9,8 @@ public class Player {
     public int[] playerAttributeStatus = new int[3];
     public String[] playerAttributes = new String[3];
 
+
+    // Attributes;
     public void setPlayerAttributes() {
         playerAttributes[0] = "Strength"; //fight
         playerAttributes[1] = "Speed"; //flee
@@ -20,6 +23,21 @@ public class Player {
         playerAttributeStatus[2] = 0; //negotiate
     }
 
+
+
+    //User name;
+    public void usrName() {
+        Scanner usrNameKybd = new Scanner(System.in);
+        usrName = usrNameKybd.nextLine();
+    }
+
+    public String getUsrName() {
+        return usrName;
+    }
+
+
+
+    //Grade
     public void setGrade() {
         grade = playerAttributeStatus[0];
         for (int i = 0; i < playerAttributeStatus.length; i++) {
@@ -29,31 +47,17 @@ public class Player {
         }
     }
 
-    public void usrName() {
-    Scanner usrNameKybd = new Scanner(System.in);
-    usrName = usrNameKybd.nextLine();
-    }
-
-    public String getUsrName() {
-        return usrName;
-    }
-
     public int getGrade() {
         return grade;
     }
 
-    public void setGradeLetter(String Letter) {
-        gradeLetter = Letter;
+    public void setGradeLetter(String letter) {
+        gradeLetter = letter;
     }
 
 
-
-
-
-
-
-
     public void gradeLetter() {
+        setGrade();
         if (getGrade() >= 100) {
             setGradeLetter("A+");
         }
@@ -72,6 +76,10 @@ public class Player {
         if (getGrade() < 60) {
             setGradeLetter("F");
         }
+    }
+
+    public String getGradeLetter() {
+        return gradeLetter;
     }
 
 }
