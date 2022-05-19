@@ -39,7 +39,7 @@ public class Story {
             }
         }
         else {// in case user mistypes
-        while (NOT (getUsrAnswer().equals("Fight") ||getUsrAnswer().equals("Flee") || getUsrAnswer().equals("Negotiate")) {
+        while (NOT (getUsrAnswer().equals("Fight") ||getUsrAnswer().equals("Flee") || getUsrAnswer().equals("Negotiate"))) {
             setUsrAnswer = kybd.nextLine();
         } }
 
