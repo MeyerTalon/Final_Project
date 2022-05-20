@@ -9,7 +9,7 @@ public class Driver {
 
         System.out.println("Welcome to Thermopylae\nIt is a world filled with.......");
 
-        System.out.println("You can choose to play as a\n1. Hacker\n2. Intern\n3. Debugger\nSelect Below:");
+        System.out.println("You can choose to play as a\n1. Hacker\n2. Intern that Works Out\n3. Duck\nSelect Below:");
         int character = 0;
         while (character < 1 || character > 3) {
             character = scan.nextInt();
@@ -20,7 +20,7 @@ public class Driver {
         } else if (character == 2) {
             Intern player = new Intern();
         } else {
-
+            Duck player = new Duck();
         }
 
         //Encounter and Obstacle Testing
