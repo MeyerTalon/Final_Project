@@ -73,6 +73,10 @@ public class Encounter {
         }
         return output;
     }
+    public boolean getWin()
+    {
+        return win;
+    }
 
     // To String
     public String toString() {
