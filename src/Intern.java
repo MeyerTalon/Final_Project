@@ -1,6 +1,6 @@
-public class InternThatWorksout extends Player {
+public class Intern extends Player {
 
-    public InternThatWorksout () {
+    public Intern () {
             super();
     }
 
