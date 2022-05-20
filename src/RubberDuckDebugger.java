@@ -1,6 +1,6 @@
 public class Duck extends Player {
 
-    public RubberDuckDebugger () {
+    public Duck () {
         super();
         }
 
