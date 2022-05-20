@@ -7,7 +7,9 @@ public class Driver {
 
 
 
-        System.out.println("Welcome to Thermopylae\nIt is a world filled with.......");
+        System.out.println("Welcome to Thermopylae\nIt is a world filled with mythical (computer themed) and magical (wholly unoriginal)" +
+                "creatures! In this fantastical world you must select your mighty avatar which you will control as you traverse this " +
+                "extravegent land!");
 
         System.out.println("You can choose to play as a\n1. Hacker\n2. Intern that Works Out\n3. Duck\nSelect Below:");
         int character = 0;
