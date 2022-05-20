@@ -6,6 +6,7 @@ public class Encounter {
     private String outocome;
     private boolean win;
     private Obstacle obstacle;
+    private Player player;
     private int choice;
 
     // Constructors
@@ -28,7 +29,25 @@ public class Encounter {
     public void setWin()
     {
         if (getChoice() == 1) {
-            if ()
+            if (player.getStrengthStatus() > obstacle.getStrength()) {
+                win = true;
+            } else {
+                win = false;
+            }
+        }
+        if (getChoice() == 2) {
+            if (player.getSpeedStatus() > obstacle.getSpeed()) {
+                win = true;
+            } else {
+                win = false;
+            }
+        }
+        if (getChoice() == 3) {
+            if (player.getCunningStatus() > obstacle.getCunning()) {
+                win = true;
+            } else {
+                win = false;
+            }
         }
     }
 
@@ -53,6 +72,10 @@ public class Encounter {
             output = "You are a FAILURE! You failed to beat " + obstacle.getObstacleName();
         }
         return output;
+    }
+    public boolean getWin()
+    {
+        return win;
     }
 
     // To String
