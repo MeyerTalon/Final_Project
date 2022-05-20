@@ -8,6 +8,7 @@ public class Player {
     public String gradeLetter;
     public int[] playerAttributeStatus = new int[3];
     public String[] playerAttributes = new String[3];
+    public String playerType;
 
 
 
@@ -29,6 +30,14 @@ public class Player {
 
     public void setStrengthStatus(int dice) {
         playerAttributeStatus[0] += dice;
+    }
+
+    public void setPlayerType(String p) {
+        playerType = p;
+    }
+
+    public String getPlayerType() {
+        return playerType;
     }
 
     public String returnClass() {

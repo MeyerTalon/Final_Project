@@ -23,21 +23,15 @@ public class Driver {
         Player player = new Player();
         if (character == 1) {
             player.setPlayerAttributeStatus(5, 30, 50);
+            player.setPlayerType("Hacker");
         } else if (character == 2) {
             player.setPlayerAttributeStatus(40, 10, 5);
+            player.setPlayerType("Intern");
         } else {
             player.setPlayerAttributeStatus(10, 50, 20);
+            player.setPlayerType("Duck");
         }
-//        if (character == 1) {
-//            Hacker player = new Hacker();
-//        }
-//        else if (character == 2) {
-//            Intern player = new Intern();
-//        } else {
-//            Duck player = new Duck();
-//        }
-
-        System.out.println("You are a " + player.getClass());
+        System.out.println("You are a " + player.getPlayerType());
 
         //Encounter and Obstacle Testing
         int[] ob1arr = {90, 20, 1};
