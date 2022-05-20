@@ -3,7 +3,7 @@ public class Encounter {
     // Initial vars
     private String approach;
     private String question;
-    private String outocome;
+    private String outcome;
     private boolean win;
     private Obstacle obstacle;
     private Player player;

@@ -33,6 +33,20 @@ public class Driver {
         }
         System.out.println("You are a " + player.getPlayerType());
 
+        //Tutorial Encounter
+        int[] rockAttributes = {1, 1, 1};
+        Obstacle rock = new Obstacle(rockAttributes, "Rock");
+        Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                "Whatever shall you do?\n", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock);
+        System.out.println(tutorial.getApproach() + tutorial.getQuestion());
+        int choiceTutorial = scan.nextInt();
+        tutorial.setChoice(choiceTutorial);
+        int tutorialRoll = Dice();
+        System.out.println("You rolled a " + roll);
+        if (tutorial.getChoice() == 1) {
+            player.setStrengthStatus(roll);
+        }
+
         //Encounter and Obstacle Testing
         int[] ob1arr = {90, 20, 1};
         Obstacle ob1 = new Obstacle(ob1arr, "Trahan");
