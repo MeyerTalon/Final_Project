@@ -10,7 +10,7 @@ public class Player {
     public String[] playerAttributes = new String[3];
 
 
-    //create three getters for each attribute
+
 
     // Attributes;
     public void setPlayerAttributes() {
@@ -23,6 +23,32 @@ public class Player {
         playerAttributeStatus[0] = 0; //fight
         playerAttributeStatus[1] = 0; //flee
         playerAttributeStatus[2] = 0; //negotiate
+    }
+
+          //attribute status getters;
+
+    public void setStrengthStatus(int dice) {
+        playerAttributeStatus[0] += dice;
+    }
+
+    public int getStrengthStatus() {
+        return playerAttributeStatus[0];
+    }
+
+    public int getSpeedStatus() {
+        return playerAttributeStatus[1];
+    }
+
+    public void setSpeedStatus(int dice) {
+        playerAttributeStatus[1] += dice;
+    }
+
+    public int getCunningStatus(){
+        return playerAttributeStatus[2];
+    }
+
+    public void setCunningStatus(int dice) {
+        playerAttributeStatus[2] += dice;
     }
 
 
