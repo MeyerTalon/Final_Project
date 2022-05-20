@@ -23,8 +23,7 @@ public class Driver {
         Player player = new Player();
         if (character == 1) {
             player.setPlayerAttributeStatus(5, 30, 50);
-        }
-        else if (character == 2) {
+        } else if (character == 2) {
             player.setPlayerAttributeStatus(40, 10, 5);
         } else {
             player.setPlayerAttributeStatus(10, 50, 20);
