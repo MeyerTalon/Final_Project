@@ -1,3 +1,7 @@
+//Get input from Global Variables (Update Display?, Image Number)
+//Find image name from List
+//Display image
+
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
