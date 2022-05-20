@@ -9,12 +9,19 @@ public class Driver {
 
         System.out.println("Welcome to Thermopylae\nIt is a world filled with.......");
 
-        System.out.println("You can choose to play as a\n1. Hacker\n2. Intern\n3. Debugger\nSelect your choice");
-        if (scan.nextInt() > 0 && scan.nextInt() < 4) {
-            final int character = scan.nextInt;
+        System.out.println("You can choose to play as a\n1. Hacker\n2. Intern\n3. Debugger\nSelect Below:");
+        int character = 0;
+        while (character < 1 || character > 3) {
+            character = scan.nextInt();
+            if (character < 1 || character > 3) System.out.println("Try again");
         }
+        if (character == 1) {
+            Hacker player = new Hacker();
+        } else if (character == 2) {
+            Intern player = new Intern();
+        } else {
 
-
+        }
 
         //Encounter and Obstacle Testing
         int[] ob1arr = {90, 20, 1};

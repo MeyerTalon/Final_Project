@@ -1,4 +1,4 @@
-public class RubberDuckDebugger extends Player {
+public class Duck extends Player {
 
     public RubberDuckDebugger () {
         super();
@@ -6,9 +6,9 @@ public class RubberDuckDebugger extends Player {
 
     @Override
     public void setPlayerAttributeStatus() {
-        playerAttributeStatus[0] = -10; //fight, strength
-        playerAttributeStatus[1] = 10; //flee, speed
-        playerAttributeStatus[2] = 50; //negotiate, cunning
+        playerAttributeStatus[0] = 10; //fight, strength
+        playerAttributeStatus[1] = 50; //flee, speed
+        playerAttributeStatus[2] = 20; //negotiate, cunning
         }
 
         /* Strength, Cunning,  Speed*/
