@@ -19,16 +19,20 @@ public class Player {
         playerAttributes[2] = "Cunning"; //negotiate
     }
 
-    public void setPlayerAttributeStatus() {
-        playerAttributeStatus[0] = 0; //fight
-        playerAttributeStatus[1] = 0; //flee
-        playerAttributeStatus[2] = 0; //negotiate
+    public void setPlayerAttributeStatus(int f, int s, int c) {
+        playerAttributeStatus[0] = f; //fight
+        playerAttributeStatus[1] = s; //flee
+        playerAttributeStatus[2] = c; //negotiate
     }
 
           //attribute status getters;
 
     public void setStrengthStatus(int dice) {
         playerAttributeStatus[0] += dice;
+    }
+
+    public String returnClass() {
+        return this.getClass().getName();
     }
 
     public int getStrengthStatus() {
