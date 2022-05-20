@@ -23,7 +23,18 @@ public class Obstacle {
     {
         obstacleName = setObstacleName;
     }
-
+    public void setStrength(int strength)
+    {
+        attributes[0] = strength;
+    }
+    public void setSpeed(int speed)
+    {
+        attributes[1] = speed;
+    }
+    public void setCunning(int cunning)
+    {
+        attributes[2] = cunning;
+    }
     //Getters
     public int[] getAttributes()
     {
@@ -33,7 +44,18 @@ public class Obstacle {
     {
         return obstacleName;
     }
-    //Create 3 getters for each attribute
+    public int getStrength()
+    {
+        return this.attributes[0];
+    }
+    public int getSpeed()
+    {
+        return this.attributes[1];
+    }
+    public int getCunning()
+    {
+        return this.attributes[2];
+    }
 
     //To String
     public String toString()

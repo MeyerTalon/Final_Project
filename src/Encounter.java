@@ -28,7 +28,25 @@ public class Encounter {
     public void setWin()
     {
         if (getChoice() == 1) {
-            if ()
+            if (player.getStrength() > obstacle.getStrength()) {
+                win = true;
+            } else {
+                win = false;
+            }
+        }
+        if (getChoice() == 2) {
+            if (player.getSpeed() > obstacle.getSpeed()) {
+                win = true;
+            } else {
+                win = false;
+            }
+        }
+        if (getChoice() == 3) {
+            if (player.getCunning > obstacle.getCunning()) {
+                win = true;
+            } else {
+                win = false;
+            }
         }
     }
 
