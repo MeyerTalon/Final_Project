@@ -20,5 +20,6 @@ public class Global {
         if (loc == 5) {
             img = "Angryvirus6.png";
         }
+        return img;
     }
 }
