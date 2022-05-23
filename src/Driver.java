@@ -34,10 +34,10 @@ public class Driver {
         System.out.println("You are a " + player.getPlayerType());
 
         //Tutorial Encounter
-        int[] rockAttributes = {1, 1, 1};
+        int[] rockAttributes = {100, 1, 1};
         Obstacle rock = new Obstacle(rockAttributes, "Rock");
         Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                "Whatever shall you do?\n", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock);
+                "Whatever shall you do?\n", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
         System.out.println(tutorial.getApproach() + tutorial.getQuestion());
         int choiceTutorial = scan.nextInt();
         tutorial.setChoice(choiceTutorial);
@@ -52,13 +52,16 @@ public class Driver {
         if (tutorial.getChoice() == 3) {
             player.setCunningStatus(roll);
         }
+        tutorial.setWin();
+        System.out.println(tutorial.getOutcome());
 
         //add other if statements
 
-        //Encounter and Obstacle Testing
+        //Encounter and Obstacle Testing1
+
         int[] ob1arr = {90, 20, 1};
         Obstacle ob1 = new Obstacle(ob1arr, "Trahan");
-        Encounter test = new Encounter("A Trahan crosses your path", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate", ob1);
+        Encounter test = new Encounter("A Trahan crosses your path", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate", ob1, player);
         System.out.println(test.getApproach() + " " + test.getQuestion());
         System.out.println("What is your choice");
         int choiceTest = scan.nextInt();

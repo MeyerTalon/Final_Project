@@ -14,11 +14,13 @@ public class Encounter {
         approach = "";
         question = "";
         obstacle = new Obstacle();
+        player = new Player();
     }
-    public Encounter(String a, String q, Obstacle o) {
+    public Encounter(String a, String q, Obstacle o, Player p) {
         approach = a;
         question = q;
         obstacle = o;
+        player = p;
     }
 
     // Setters
