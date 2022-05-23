@@ -14,7 +14,10 @@ public class Driver {
         Thread.sleep(2000);
         System.out.println("It is a world filled with mythical (computer themed) and magical (wholly unoriginal) creatures!" +
             "In this fantastical world you must select your mighty avatar which you will control as you traverse this " +
-                "extravagant land!");
+                "extravagant land! You, the player, and all the obstacles you shall face have three attributes: Strength, Speed, " +
+                "and Cunning. At each encounter you will choose a course of action and roll a dice to improve your attributes. " +
+                "At the end of the encounter if the attribute you chose, which corresponds to the course of action you took, " +
+                "is greater than the obstacle's, you win! If otherwise, well, you get the idea ;) ");
         Thread.sleep(2000);
 
         System.out.println("You can choose to play as a\n1. Hacker\n2. Intern that Works Out\n3. Duck\nSelect Below:");
@@ -44,7 +47,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -60,6 +68,7 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
@@ -71,7 +80,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -87,12 +101,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 2) {
                 //Tutorial Encounter
@@ -100,7 +113,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -116,12 +134,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 3) {
                 //Tutorial Encounter
@@ -129,7 +146,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -145,12 +167,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 4) {
                 //Tutorial Encounter
@@ -158,7 +179,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -174,12 +200,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 5) {
                 //Tutorial Encounter
@@ -187,7 +212,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -203,12 +233,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 6) {
                 //Tutorial Encounter
@@ -216,7 +245,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -232,12 +266,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 7) {
                 //Tutorial Encounter
@@ -245,7 +278,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -261,12 +299,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             } else if (loc == 8) {
                 //Tutorial Encounter
@@ -274,7 +311,12 @@ public class Driver {
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                Thread.sleep(1000);
+                System.out.println(tutorial.getApproach());
+                Thread.sleep(1000);
+                System.out.print(rock);
+                Thread.sleep(1000);
+                System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
@@ -290,12 +332,11 @@ public class Driver {
                     player.setCunningStatus(roll);
                 }
                 tutorial.setWin();
+                Thread.sleep(1000);
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
                     loc++;
-                } else {
-                    loc--;
                 }
             }
 
