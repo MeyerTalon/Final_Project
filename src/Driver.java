@@ -46,6 +46,14 @@ public class Driver {
         if (tutorial.getChoice() == 1) {
             player.setStrengthStatus(roll);
         }
+        if (tutorial.getChoice() == 2) {
+            player.setSpeedStatus(roll);
+        }
+        if (tutorial.getChoice() == 3) {
+            player.setCunningStatus(roll);
+        }
+
+        //add other if statements
 
         //Encounter and Obstacle Testing
         int[] ob1arr = {90, 20, 1};
