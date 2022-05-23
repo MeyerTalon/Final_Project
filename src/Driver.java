@@ -37,8 +37,8 @@ public class Driver {
         int[] rockAttributes = {100, 1, 1};
         Obstacle rock = new Obstacle(rockAttributes, "Rock");
         Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                "Whatever shall you do?\n", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-        System.out.println(tutorial.getApproach() + tutorial.getQuestion());
+                "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+        System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
         int choiceTutorial = scan.nextInt();
         tutorial.setChoice(choiceTutorial);
         roll = Dice();
