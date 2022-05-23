@@ -4,6 +4,8 @@ public class Driver {
         Scanner scan = new Scanner(System.in);
         int roll = 0;
         int loc = 0;
+        char space = 'a';
+
 
         System.out.println("Technological Terrors Transmitting Tremors Towards Thermopylae");
         Thread.sleep(5000);
@@ -46,6 +48,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -72,6 +75,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -100,6 +104,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -128,6 +133,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -156,6 +162,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -184,6 +191,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -212,6 +220,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -240,6 +249,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
@@ -268,6 +278,7 @@ public class Driver {
                 int choiceTutorial = scan.nextInt();
                 tutorial.setChoice(choiceTutorial);
                 roll = Dice();
+                Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
                 if (tutorial.getChoice() == 1) {
                     player.setStrengthStatus(roll);
