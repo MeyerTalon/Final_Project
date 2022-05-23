@@ -3,6 +3,7 @@ public class Driver {
     public static void main(String[] args) throws InterruptedException {
         Scanner scan = new Scanner(System.in);
         int roll = 0;
+        int loc = 0;
 
         System.out.println("Technological Terrors Transmitting Tremors Towards Thermopylae");
         Thread.sleep(5000);
@@ -33,29 +34,67 @@ public class Driver {
         }
         System.out.println("You are a " + player.getPlayerType());
 
-        //Tutorial Encounter
-        int[] rockAttributes = {100, 1, 1};
-        Obstacle rock = new Obstacle(rockAttributes, "Rock");
-        Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-        System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
-        int choiceTutorial = scan.nextInt();
-        tutorial.setChoice(choiceTutorial);
-        roll = Dice();
-        System.out.println("You rolled a " + roll);
-        if (tutorial.getChoice() == 1) {
-            player.setStrengthStatus(roll);
-        }
-        if (tutorial.getChoice() == 2) {
-            player.setSpeedStatus(roll);
-        }
-        if (tutorial.getChoice() == 3) {
-            player.setCunningStatus(roll);
-        }
-        tutorial.setWin();
-        System.out.println(tutorial.getOutcome());
 
-        //add other if statements
+        while (loc < 11) {
+            if (loc == 0) {
+                //Tutorial Encounter
+                int[] rockAttributes = {100, 1, 1};
+                Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                int choiceTutorial = scan.nextInt();
+                tutorial.setChoice(choiceTutorial);
+                roll = Dice();
+                System.out.println("You rolled a " + roll);
+                if (tutorial.getChoice() == 1) {
+                    player.setStrengthStatus(roll);
+                }
+                if (tutorial.getChoice() == 2) {
+                    player.setSpeedStatus(roll);
+                }
+                if (tutorial.getChoice() == 3) {
+                    player.setCunningStatus(roll);
+                }
+                tutorial.setWin();
+                System.out.println(tutorial.getOutcome());
+
+                if (tutorial.getWin()) {
+                    loc++;
+                }
+            } else if (loc == 1) {
+                //Tutorial Encounter
+                int[] rockAttributes = {100, 1, 1};
+                Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                System.out.println(tutorial.getApproach() + rock + tutorial.getQuestion());
+                int choiceTutorial = scan.nextInt();
+                tutorial.setChoice(choiceTutorial);
+                roll = Dice();
+                System.out.println("You rolled a " + roll);
+                if (tutorial.getChoice() == 1) {
+                    player.setStrengthStatus(roll);
+                }
+                if (tutorial.getChoice() == 2) {
+                    player.setSpeedStatus(roll);
+                }
+                if (tutorial.getChoice() == 3) {
+                    player.setCunningStatus(roll);
+                }
+                tutorial.setWin();
+                System.out.println(tutorial.getOutcome());
+
+                if (tutorial.getWin()) {
+                    loc++;
+                } else {
+                    loc--;
+                }
+            }
+
+
+
+        }
 
         //Encounter and Obstacle Testing1
 
