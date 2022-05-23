@@ -1,7 +1,7 @@
 
 public class Global {
 
-    int loc = 0;
+    public int loc = 0;
 
     public String Images() {
         String img = "";
