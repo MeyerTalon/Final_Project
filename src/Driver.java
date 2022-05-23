@@ -41,7 +41,7 @@ public class Driver {
         System.out.println(tutorial.getApproach() + tutorial.getQuestion());
         int choiceTutorial = scan.nextInt();
         tutorial.setChoice(choiceTutorial);
-        int tutorialRoll = Dice();
+        roll = Dice();
         System.out.println("You rolled a " + roll);
         if (tutorial.getChoice() == 1) {
             player.setStrengthStatus(roll);
