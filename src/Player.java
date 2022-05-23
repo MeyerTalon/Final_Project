@@ -28,6 +28,8 @@ public class Player {
 
           //attribute status getters;
 
+
+
     public void setStrengthStatus(int dice) {
         playerAttributeStatus[0] += dice;
     }
