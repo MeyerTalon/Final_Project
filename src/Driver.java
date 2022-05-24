@@ -363,6 +363,7 @@ public class Driver {
                     loc--;
                 }
             }
+            System.out.println("Congratulations! You defeated the TraHydra");
 
 
 
