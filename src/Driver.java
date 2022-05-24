@@ -79,252 +79,255 @@ public class Driver {
                 } else {
                     loc--;
                 }
-            } else if (loc == 1 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] compMouseAttributes = {100, 1, 1};
-                Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
-                Encounter tutorial = new Encounter("A computer mouse approaches you. It looks hungry. You feed it, and it suddenly begins to grow. You wonder if it plans on making you its next meal..." +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", compMouse, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(compMouse);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                while (player.getGrade() < 100) {
+                } else if (loc == 1) {
+                    //Tutorial Encounter
+                    int[] compMouseAttributes = {100, 1, 1};
+                    Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
+                    Encounter tutorial = new Encounter("A computer mouse approaches you. It looks hungry. You feed it, and it suddenly begins to grow. You wonder if it plans on making you its next meal..." +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", compMouse, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(compMouse);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 2 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] trojanHorseAttributes = {100, 1, 1};
-                Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
-                Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", trojanHorse, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(trojanHorse);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 2 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] trojanHorseAttributes = {100, 1, 1};
+                    Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
+                    Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", trojanHorse, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(trojanHorse);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 3 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] coronaAttributes = {100, 1, 1};
-                Obstacle corona = new Obstacle(coronaAttributes, "Corona");
-                Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", corona, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(corona);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 3 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] coronaAttributes = {100, 1, 1};
+                    Obstacle corona = new Obstacle(coronaAttributes, "Corona");
+                    Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", corona, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(corona);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 4 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] duckAttributes = {100, 1, 1};
-                Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
-                Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", duck, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(duck);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 4 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] duckAttributes = {100, 1, 1};
+                    Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
+                    Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", duck, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(duck);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 5 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] robotAttributes = {100, 1, 1};
-                Obstacle robot = new Obstacle(robotAttributes, "Robot");
-                Encounter tutorial = new Encounter("It's a bird, it's a plane, it's a... robot? It seems that the robot revolution has begun." +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", robot, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(robot);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 5 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] robotAttributes = {100, 1, 1};
+                    Obstacle robot = new Obstacle(robotAttributes, "Robot");
+                    Encounter tutorial = new Encounter("It's a bird, it's a plane, it's a... robot? It seems that the robot revolution has begun." +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", robot, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(robot);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 6 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(rock);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 6 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] rockAttributes = {100, 1, 1};
+                    Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                    Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(rock);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
-                }
-            } else if (loc == 7 && player.getGrade() < 100) {
-                //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
-                Thread.sleep(1000);
-                System.out.print(rock);
-                Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
-                int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
-                roll = Dice();
-                Thread.sleep(2000);
-                System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
-                    player.setStrengthStatus(roll);
-                }
-                if (tutorial.getChoice() == 2) {
-                    player.setSpeedStatus(roll);
-                }
-                if (tutorial.getChoice() == 3) {
-                    player.setCunningStatus(roll);
-                }
-                tutorial.setWin();
-                Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
+                } else if (loc == 7 && player.getGrade() < 100) {
+                    //Tutorial Encounter
+                    int[] rockAttributes = {100, 1, 1};
+                    Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                    Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getApproach());
+                    Thread.sleep(1000);
+                    System.out.print(rock);
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getQuestion());
+                    int choiceTutorial = scan.nextInt();
+                    tutorial.setChoice(choiceTutorial);
+                    roll = Dice();
+                    Thread.sleep(2000);
+                    System.out.println("You rolled a " + roll);
+                    if (tutorial.getChoice() == 1) {
+                        player.setStrengthStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 2) {
+                        player.setSpeedStatus(roll);
+                    }
+                    if (tutorial.getChoice() == 3) {
+                        player.setCunningStatus(roll);
+                    }
+                    tutorial.setWin();
+                    Thread.sleep(1000);
+                    System.out.println(tutorial.getOutcome());
 
-                if (tutorial.getWin()) {
-                    loc++;
-                } else {
-                    loc--;
+                    if (tutorial.getWin()) {
+                        loc++;
+                    } else {
+                        loc--;
+                    }
                 }
-            } else if (loc == 8 && player.getGrade() < 100) {
+            }
+            } if (player.getGrade() >= 100) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
                 Obstacle rock = new Obstacle(trahatt, "TraHydra");
@@ -359,10 +362,10 @@ public class Driver {
                 if (finalBoss.getWin()) {
                     loc++;
                 } else {
-                    System.out.println("You ");
-                    loc--;
+                   loc--;
                 }
             }
+
 
 
 
