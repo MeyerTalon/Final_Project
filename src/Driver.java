@@ -327,15 +327,15 @@ public class Driver {
             } else if (loc == 8) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
-                Obstacle rock = new Obstacle(trahatt, "TraHydra");
+                Obstacle traHydra = new Obstacle(trahatt, "TraHydra");
                 Encounter finalBoss = new Encounter("After endless fights, dangerous adventures, and countless close calls with death, you have finally arrived. The lair of the TraHydra stands before you. " +
                         "\nYou stare up at foreboding castle, and as you look the gates open wide and a single large figure steps toward you. The TraHydra.\nHe calls out: who dares stand before the gates of  my castle" +
                         "\nTrembling, you call out: It is I, " + player.getPlayerType() + "\nSnarling, the TraHydra takes another step" +
-                        "How do you choose to approach this fight.", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                        "How do you choose to approach this fight.", "\nWould you like to:\n1. Face the being head on, attacking with your dual bladed heavy axes\n2. Attack from the shadows, quickly avoiding all attacks\n3. SHow the TraHydra the error of his ways\nMake your choice:", traHydra, player);
                 Thread.sleep(1000);
                 System.out.println(finalBoss.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(traHydra);
                 Thread.sleep(1000);
                 System.out.println(finalBoss.getQuestion());
                 int choiceTutorial = scan.nextInt();
@@ -359,24 +359,12 @@ public class Driver {
                 if (finalBoss.getWin()) {
                     loc++;
                 } else {
+                    System.out.println("You barely escape with your life, losing a limb in the process");
                     loc--;
                 }
             }
-
-
-
         }
-
-//        //Encounter and Obstacle Testing1
-//
-//        int[] ob1arr = {90, 20, 1};
-//        Obstacle ob1 = new Obstacle(ob1arr, "Trahan");
-//        Encounter test = new Encounter("A Trahan crosses your path", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate", ob1, player);
-//        System.out.println(test.getApproach() + " " + test.getQuestion());
-//        System.out.println("What is your choice");
-//        int choiceTest = scan.nextInt();
-//        test.setChoice(choiceTest);
-//        System.out.print(test);
+        System.out.println("You win");
 
     }
 
