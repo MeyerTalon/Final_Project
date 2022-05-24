@@ -326,35 +326,37 @@ public class Driver {
                 }
             } else if (loc == 8) {
                 //Tutorial Encounter
-                int[] rockAttributes = {90, 90, 90};
-                Obstacle rock = new Obstacle(rockAttributes, "TraHydra");
-                Encounter tutorial = new Encounter("You have finally arrived. The lair of the TraHydra stands before you. " +
+                int[] trahatt = {90, 90, 90};
+                Obstacle rock = new Obstacle(trahatt, "TraHydra");
+                Encounter finalBoss = new Encounter("After endless fights, dangerous adventures, and countless close calls with death, you have finally arrived. The lair of the TraHydra stands before you. " +
+                        "\nYou stare up at foreboding castle, and as you look the gates open wide and a single large figure steps toward you. The TraHydra.\nHe calls out: who dares stand before the gates of  my castle" +
+                        "\nTrembling, you call out: It is I, " + player.getPlayerType() + "\nSnarling, the TraHydra takes another step" +
                         "How do you choose to approach this fight.\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
-                System.out.println(tutorial.getApproach());
+                System.out.println(finalBoss.getApproach());
                 Thread.sleep(1000);
                 System.out.print(rock);
                 Thread.sleep(1000);
-                System.out.println(tutorial.getQuestion());
+                System.out.println(finalBoss.getQuestion());
                 int choiceTutorial = scan.nextInt();
-                tutorial.setChoice(choiceTutorial);
+                finalBoss.setChoice(choiceTutorial);
                 roll = Dice();
                 Thread.sleep(2000);
                 System.out.println("You rolled a " + roll);
-                if (tutorial.getChoice() == 1) {
+                if (finalBoss.getChoice() == 1) {
                     player.setStrengthStatus(roll);
                 }
-                if (tutorial.getChoice() == 2) {
+                if (finalBoss.getChoice() == 2) {
                     player.setSpeedStatus(roll);
                 }
-                if (tutorial.getChoice() == 3) {
+                if (finalBoss.getChoice() == 3) {
                     player.setCunningStatus(roll);
                 }
-                tutorial.setWin();
+                finalBoss.setWin();
                 Thread.sleep(1000);
-                System.out.println(tutorial.getOutcome());
+                System.out.println(finalBoss.getOutcome());
 
-                if (tutorial.getWin()) {
+                if (finalBoss.getWin()) {
                     loc++;
                 } else {
                     loc--;
