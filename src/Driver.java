@@ -81,7 +81,7 @@ public class Driver {
                 }
 
            while (player.getGrade() < 100) {
-                } else if (loc == 1) {
+                } if (loc == 1) {
                     //Tutorial Encounter
                     int[] compMouseAttributes = {100, 1, 1};
                     Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
