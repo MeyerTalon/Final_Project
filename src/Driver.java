@@ -11,7 +11,7 @@ public class Driver {
         System.out.println("Technological Terrors Transmitting Tremors Towards Thermopylae");
         Thread.sleep(5000);
         //test = scan.next();
-        System.out.println("Welcome to Thermopylae");
+        System.out.println("\n\n\n\nWelcome to Thermopylae");
         Thread.sleep(2000);
         System.out.println("It is a world filled with mythical (computer themed) and magical (wholly unoriginal) creatures!\n" +
             "In this fantastical world you must select your mighty avatar which you will control as you traverse this \n" +
@@ -41,7 +41,7 @@ public class Driver {
         System.out.println("You are a " + player.getPlayerType());
 
 
-        while (loc < 2) {
+        while (loc < 9) {
             if (loc == 0) {
                 //Tutorial Encounter
                 int[] rockAttributes = {1, 1, 1};
