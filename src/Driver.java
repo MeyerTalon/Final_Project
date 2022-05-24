@@ -81,14 +81,14 @@ public class Driver {
                 }
             } else if (loc == 1) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                int[] compMouseAttributes = {100, 1, 1};
+                Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
+                Encounter tutorial = new Encounter("A computer mouse approaches you. It looks hungry. You feed it, and it suddenly begins to grow. You wonder if it plans on making you its next meal..." +
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", compMouse, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(compMouse);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
@@ -116,14 +116,14 @@ public class Driver {
                 }
             } else if (loc == 2) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                int[] trojanHorseAttributes = {100, 1, 1};
+                Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
                 Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", trojanHorse, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(trojanHorse);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
@@ -151,14 +151,14 @@ public class Driver {
                 }
             } else if (loc == 3) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                int[] coronaAttributes = {100, 1, 1};
+                Obstacle corona = new Obstacle(coronaAttributes, "Corona");
                 Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", corona, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(corona);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
@@ -186,14 +186,14 @@ public class Driver {
                 }
             } else if (loc == 4) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
+                int[] duckAttributes = {100, 1, 1};
+                Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
                 Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", duck, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(duck);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
@@ -221,14 +221,14 @@ public class Driver {
                 }
             } else if (loc == 5) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                int[] robotAttributes = {100, 1, 1};
+                Obstacle robot = new Obstacle(robotAttributes, "Robot");
+                Encounter tutorial = new Encounter("It's a bird, it's a plane, it's a... robot? It seems that the robot revolution has begun." +
+                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", robot, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
-                System.out.print(rock);
+                System.out.print(robot);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getQuestion());
                 int choiceTutorial = scan.nextInt();
