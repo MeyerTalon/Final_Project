@@ -19,9 +19,9 @@ public class Driver {
                 "and Cunning. At each encounter you will choose a course of action and roll a dice to improve your attributes. \n" +
                 "At the end of the encounter if the attribute you chose, which corresponds to the course of action you took, \n" +
                 "is greater than the obstacle's, you win! If otherwise, well, you get the idea ;)");
-        Thread.sleep(2000);
+        Thread.sleep(10000);
 
-        System.out.println("You can choose to play as a\n1. Hacker\n2. Intern that Works Out\n3. Duck\nSelect Below:");
+        System.out.println("You can choose to play as a\n1. Hacker (The Brains)\n2. Intern that Works Out (The Brawn)\n3. Rubber Duck Debugger (Fast Boy)\nSelect Below:");
         int character = 0;
         while (character < 1 || character > 3) {
             character = scan.nextInt();
@@ -115,7 +115,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 2) {
-                //Tutorial Encounter
+                //Second Encounter
                 int[] trojanHorseAttributes = {100, 1, 1};
                 Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
                 Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
@@ -150,7 +150,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 3) {
-                //Tutorial Encounter
+                //Third Encounter
                 int[] coronaAttributes = {100, 1, 1};
                 Obstacle corona = new Obstacle(coronaAttributes, "Corona");
                 Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
@@ -185,7 +185,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 4) {
-                //Tutorial Encounter
+                //Fourth Encounter
                 int[] duckAttributes = {100, 1, 1};
                 Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
                 Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
@@ -220,7 +220,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 5) {
-                //Tutorial Encounter
+                //Fifth Encounter
                 int[] robotAttributes = {100, 1, 1};
                 Obstacle robot = new Obstacle(robotAttributes, "Robot");
                 Encounter tutorial = new Encounter("It's a bird, it's a plane, it's a... robot? It seems that the robot revolution has begun." +
@@ -290,7 +290,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 7) {
-                //Tutorial Encounter
+                //Seventh Encounter
                 int[] rockAttributes = {100, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
@@ -325,7 +325,7 @@ public class Driver {
                     loc--;
                 }
             } else if (loc == 8) {
-                //Tutorial Encounter
+                //Final Encounter
                 int[] trahatt = {90, 90, 90};
                 Obstacle traHydra = new Obstacle(trahatt, "TraHydra");
                 Encounter finalBoss = new Encounter("After endless fights, dangerous adventures, and countless close calls with death, you have finally arrived. The lair of the TraHydra stands before you. " +
