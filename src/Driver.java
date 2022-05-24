@@ -5,11 +5,12 @@ public class Driver {
         int roll = 0;
         int loc = 0;
         char space = 'a';
+        //String test = "";
 
 
         System.out.println("Technological Terrors Transmitting Tremors Towards Thermopylae");
         Thread.sleep(5000);
-
+        //test = scan.next();
         System.out.println("Welcome to Thermopylae");
         Thread.sleep(2000);
         System.out.println("It is a world filled with mythical (computer themed) and magical (wholly unoriginal) creatures!" +
@@ -45,7 +46,7 @@ public class Driver {
                 //Tutorial Encounter
                 int[] rockAttributes = {100, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                Encounter tutorial = new Encounter("wandering through your village, you approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
@@ -72,6 +73,8 @@ public class Driver {
                 System.out.println(tutorial.getOutcome());
 
                 if (tutorial.getWin()) {
+                    System.out.println("Congratulations! You have defeated the rock. This marks you as the strongest in the village, and you choose to journey to the lair of the TraHydra," +
+                            "but the journey will be perilous.");
                     loc++;
                 }
             } else if (loc == 1) {
