@@ -79,7 +79,8 @@ public class Driver {
                 } else {
                     loc--;
                 }
-                while (player.getGrade() < 100) {
+
+           while (player.getGrade() < 100) {
                 } else if (loc == 1) {
                     //Tutorial Encounter
                     int[] compMouseAttributes = {100, 1, 1};
@@ -326,7 +327,7 @@ public class Driver {
                         loc--;
                     }
                 }
-            }
+           }
             } if (player.getGrade() >= 100) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
