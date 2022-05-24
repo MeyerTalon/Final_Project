@@ -41,7 +41,7 @@ public class Driver {
         System.out.println("You are a " + player.getPlayerType());
 
 
-        while (loc < 2) {
+        while (loc < 9) {
             if (loc == 0) {
                 //Tutorial Encounter
                 int[] rockAttributes = {1, 1, 1};
@@ -359,6 +359,7 @@ public class Driver {
                 if (finalBoss.getWin()) {
                     loc++;
                 } else {
+                    System.out.println("You ");
                     loc--;
                 }
             }
@@ -367,16 +368,6 @@ public class Driver {
 
         }
 
-//        //Encounter and Obstacle Testing1
-//
-//        int[] ob1arr = {90, 20, 1};
-//        Obstacle ob1 = new Obstacle(ob1arr, "Trahan");
-//        Encounter test = new Encounter("A Trahan crosses your path", "Would you like to:\n1. Fight\n2. Flee\n3. Negotiate", ob1, player);
-//        System.out.println(test.getApproach() + " " + test.getQuestion());
-//        System.out.println("What is your choice");
-//        int choiceTest = scan.nextInt();
-//        test.setChoice(choiceTest);
-//        System.out.print(test);
 
     }
 
