@@ -44,7 +44,7 @@ public class Driver {
         while (loc < 2) {
             if (loc == 0) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
+                int[] rockAttributes = {1, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
                 Encounter tutorial = new Encounter("wandering through your village, you approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
@@ -76,6 +76,8 @@ public class Driver {
                     System.out.println("Congratulations! You have defeated the rock. This marks you as the strongest in the village, and you choose to journey to the lair of the TraHydra," +
                             "but the journey will be perilous.");
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 1) {
                 //Tutorial Encounter
@@ -109,6 +111,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 2) {
                 //Tutorial Encounter
@@ -142,6 +146,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 3) {
                 //Tutorial Encounter
@@ -175,6 +181,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 4) {
                 //Tutorial Encounter
@@ -208,6 +216,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 5) {
                 //Tutorial Encounter
@@ -241,6 +251,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 6) {
                 //Tutorial Encounter
@@ -274,6 +286,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 7) {
                 //Tutorial Encounter
@@ -307,6 +321,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             } else if (loc == 8) {
                 //Tutorial Encounter
@@ -340,6 +356,8 @@ public class Driver {
 
                 if (tutorial.getWin()) {
                     loc++;
+                } else {
+                    loc--;
                 }
             }
 
