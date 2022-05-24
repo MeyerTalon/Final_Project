@@ -118,7 +118,7 @@ public class Driver {
                 //Tutorial Encounter
                 int[] rockAttributes = {100, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
@@ -153,7 +153,7 @@ public class Driver {
                 //Tutorial Encounter
                 int[] rockAttributes = {100, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
@@ -188,7 +188,7 @@ public class Driver {
                 //Tutorial Encounter
                 int[] rockAttributes = {100, 1, 1};
                 Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
+                Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
                         "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
