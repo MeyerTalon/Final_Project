@@ -326,10 +326,10 @@ public class Driver {
                 }
             } else if (loc == 8) {
                 //Tutorial Encounter
-                int[] rockAttributes = {100, 1, 1};
-                Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                        "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                int[] rockAttributes = {90, 90, 90};
+                Obstacle rock = new Obstacle(rockAttributes, "TraHydra");
+                Encounter tutorial = new Encounter("You have finally arrived. The lair of the TraHydra stands before you. " +
+                        "How do you choose to approach this fight.\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(tutorial.getApproach());
                 Thread.sleep(1000);
