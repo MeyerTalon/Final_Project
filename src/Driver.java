@@ -79,9 +79,9 @@ public class Driver {
                 } else {
                     loc--;
                 }
+            }
 
-           while (player.getGrade() < 100) {
-                } if (loc == 1) {
+            else if (loc == 1) {
                     //Tutorial Encounter
                     int[] compMouseAttributes = {100, 1, 1};
                     Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
@@ -116,7 +116,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 2 && player.getGrade() < 100) {
+            } else if (loc == 2) {
                     //Tutorial Encounter
                     int[] trojanHorseAttributes = {100, 1, 1};
                     Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
@@ -151,7 +151,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 3 && player.getGrade() < 100) {
+            } else if (loc == 3) {
                     //Tutorial Encounter
                     int[] coronaAttributes = {100, 1, 1};
                     Obstacle corona = new Obstacle(coronaAttributes, "Corona");
@@ -186,7 +186,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 4 && player.getGrade() < 100) {
+            } else if (loc == 4) {
                     //Tutorial Encounter
                     int[] duckAttributes = {100, 1, 1};
                     Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
@@ -221,7 +221,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 5 && player.getGrade() < 100) {
+            } else if (loc == 5) {
                     //Tutorial Encounter
                     int[] robotAttributes = {100, 1, 1};
                     Obstacle robot = new Obstacle(robotAttributes, "Robot");
@@ -256,7 +256,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 6 && player.getGrade() < 100) {
+            } else if (loc == 6) {
                     //Tutorial Encounter
                     int[] rockAttributes = {100, 1, 1};
                     Obstacle rock = new Obstacle(rockAttributes, "Rock");
@@ -291,7 +291,7 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                } else if (loc == 7 && player.getGrade() < 100) {
+            } else if (loc == 7) {
                     //Tutorial Encounter
                     int[] rockAttributes = {100, 1, 1};
                     Obstacle rock = new Obstacle(rockAttributes, "Rock");
@@ -326,9 +326,9 @@ public class Driver {
                     } else {
                         loc--;
                     }
-                }
-           }
-            } if (player.getGrade() >= 100) {
+
+
+            } if (loc == 8) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
                 Obstacle rock = new Obstacle(trahatt, "TraHydra");
