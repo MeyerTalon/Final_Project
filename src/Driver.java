@@ -258,14 +258,14 @@ public class Driver {
                     }
             } else if (loc == 6) {
                     //Tutorial Encounter
-                    int[] rockAttributes = {100, 1, 1};
-                    Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                    Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                    int[] salePersonAttributes = {100, 1, 1};
+                    Obstacle salePerson = new Obstacle(salePersonAttributes, "Sale Person");
+                    Encounter tutorial = new Encounter("You asked for a keyboard, and you got a piano. Wrong on several levels. You aren't happy. The sale person isn't happy that you're not happy. The sale person has a knife." +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", salePerson, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
                     Thread.sleep(1000);
-                    System.out.print(rock);
+                    System.out.print(salePerson);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getQuestion());
                     int choiceTutorial = scan.nextInt();
@@ -293,14 +293,14 @@ public class Driver {
                     }
             } else if (loc == 7) {
                     //Tutorial Encounter
-                    int[] rockAttributes = {100, 1, 1};
-                    Obstacle rock = new Obstacle(rockAttributes, "Rock");
-                    Encounter tutorial = new Encounter("You approach a rock :| Oh nooooo... You must choose a course of action oh lost traveler. " +
-                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                    int[] momAttributes = {100, 1, 1};
+                    Obstacle mom = new Obstacle(momAttributes, "Mom");
+                    Encounter tutorial = new Encounter("You dropped your supposedly waterproof phone in a lake. Your mom is angry because it was expensive. How do you deal with your mom?" +
+                            "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", mom, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
                     Thread.sleep(1000);
-                    System.out.print(rock);
+                    System.out.print(mom);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getQuestion());
                     int choiceTutorial = scan.nextInt();
