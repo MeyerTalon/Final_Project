@@ -335,7 +335,7 @@ public class Driver {
                 Encounter finalBoss = new Encounter("After endless fights, dangerous adventures, and countless close calls with death, you have finally arrived. The lair of the TraHydra stands before you. " +
                         "\nYou stare up at foreboding castle, and as you look the gates open wide and a single large figure steps toward you. The TraHydra.\nHe calls out: who dares stand before the gates of  my castle" +
                         "\nTrembling, you call out: It is I, " + player.getPlayerType() + "\nSnarling, the TraHydra takes another step" +
-                        "How do you choose to approach this fight.\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", rock, player);
+                        "How do you choose to approach this fight.\n", "\nWould you like to:\n1. Attack head on with your heavy weapons\n2. Hide in the shadows and strike from behind\n3. Show the TraHydra the error of its ways\n Enter your choice:", rock, player);
                 Thread.sleep(1000);
                 System.out.println(finalBoss.getApproach());
                 Thread.sleep(1000);
@@ -363,15 +363,14 @@ public class Driver {
                 if (finalBoss.getWin()) {
                     loc++;
                 } else {
-                    System.out.println("You ");
+                    System.out.println("You have been bested by the TraHydra, barely escaping with your life.");
                     loc--;
                 }
             }
 
-
-
         }
 
+        System.out.println("Congratulations! You have defeated the TraHydra and retaken the land of Thermopylae.");
 
     }
 
