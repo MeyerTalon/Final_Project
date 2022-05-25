@@ -93,35 +93,29 @@ public class Player {
         return grade;
     }
 
-    public void setGradeLetter(String letter) {
-        gradeLetter = letter;
-    }
-
-
-    public void gradeLetter() {
-        setGrade();
-        if (getGrade() >= 100) {
-            setGradeLetter("A+");
-        }
-        if (getGrade() >= 90 && getGrade() < 100) {
-            setGradeLetter("A");
-        }
-        if (getGrade() >= 80 && getGrade() < 90) {
-            setGradeLetter("B");
-        }
-        if (getGrade() >= 70 && getGrade() < 80) {
-            setGradeLetter("C");
-        }
-        if (getGrade() >= 60 && getGrade() < 70) {
-            setGradeLetter("D");
-        }
-        if (getGrade() < 60) {
-            setGradeLetter("F");
-        }
-    }
 
     public String getGradeLetter() {
+        String gradeLetter = "";
+        if (getGrade() >= 100) {
+            gradeLetter = "A+";
+        }
+        if (getGrade() >= 90 && getGrade() < 100) {
+            gradeLetter = "A";
+        }
+        if (getGrade() >= 80 && getGrade() < 90) {
+            gradeLetter = "B";
+        }
+        if (getGrade() >= 70 && getGrade() < 80) {
+            gradeLetter ="C";
+        }
+        if (getGrade() >= 60 && getGrade() < 70) {
+            gradeLetter = "D";
+        }
+        if (getGrade() < 60) {
+            gradeLetter = "F";
+        }
         return gradeLetter;
     }
+
 
 }
