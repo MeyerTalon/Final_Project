@@ -1,6 +1,6 @@
-//Get input from Global Variables (Update Display?, Image Number)
-//Find image name from List
-//Display image
+//(fix) Global Class: If___, then set ImageName to ___;
+//(done) Get input from Global Variables (Image Name String)
+//(done) Display image
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
@@ -17,7 +17,7 @@ public class Display {
                 BufferedImage img = null;
 
                 try {
-                    img = ImageIO.read(getClass().getResource("/sad keanu.jpg"));
+                    img = ImageIO.read(getClass().getResource("/" + img /*should look like this: /sad keanu.jpg*/));
                 } catch (IOException e) {
                     e.printStackTrace();
                     System.exit(1);
