@@ -120,7 +120,7 @@ public class Driver {
                     //Tutorial Encounter
                     int[] trojanHorseAttributes = {100, 1, 1};
                     Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
-                    Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
+                    Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up..." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", trojanHorse, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
@@ -155,7 +155,7 @@ public class Driver {
                     //Tutorial Encounter
                     int[] coronaAttributes = {100, 1, 1};
                     Obstacle corona = new Obstacle(coronaAttributes, "Corona");
-                    Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
+                    Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. You need a plan to defeat the virus." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", corona, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
@@ -295,7 +295,7 @@ public class Driver {
                     //Tutorial Encounter
                     int[] momAttributes = {100, 1, 1};
                     Obstacle mom = new Obstacle(momAttributes, "Mom");
-                    Encounter tutorial = new Encounter("You dropped your supposedly waterproof phone in a lake. Your mom is angry because it was expensive. How do you deal with your mom?" +
+                    Encounter tutorial = new Encounter("You dropped your supposedly waterproof phone in a lake. Your mom is angry because it was expensive, and she's coming after you." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", mom, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
