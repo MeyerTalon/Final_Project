@@ -43,6 +43,7 @@ public class Driver {
 
         while (loc < 9) {
             player.setGrade();
+            player.gradeLetter();
             if (loc == 0) {
                 //Tutorial Encounter
                 int[] rockAttributes = {1, 1, 1};
