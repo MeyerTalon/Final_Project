@@ -260,7 +260,7 @@ public class Driver {
                     //Tutorial Encounter
                     int[] salePersonAttributes = {100, 1, 1};
                     Obstacle salePerson = new Obstacle(salePersonAttributes, "Sale Person");
-                    Encounter tutorial = new Encounter("You asked for a keyboard, and you got a piano. Wrong on several levels. You aren't happy. The sale person isn't happy that you're not happy. The sale person has a knife." +
+                    Encounter tutorial = new Encounter("You asked for a keyboard, and you got a piano. Wrong on several levels. You aren't happy. The sale person isn't happy that you're not happy. The sale person has a weapon." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", salePerson, player);
                     Thread.sleep(1000);
                     System.out.println(tutorial.getApproach());
