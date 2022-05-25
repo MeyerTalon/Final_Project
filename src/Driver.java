@@ -8,7 +8,7 @@ public class Driver {
         //String test = "";
 
 
-        System.out.println("Technological Terrors Transmitting Tremors Towards Thermopylae");
+        System.out.println("\n\nTechnological Terrors Transmitting Tremors Towards Thermopylae");
         Thread.sleep(5000);
         //test = scan.next();
         System.out.println("\n\n\n\nWelcome to Thermopylae");
@@ -42,6 +42,7 @@ public class Driver {
 
 
         while (loc < 9) {
+            player.setGrade();
             if (loc == 0) {
                 //Tutorial Encounter
                 int[] rockAttributes = {1, 1, 1};
@@ -75,6 +76,7 @@ public class Driver {
                 if (tutorial.getWin()) {
                     System.out.println("Congratulations! You have defeated the rock. This marks you as the strongest in the village, and you choose to journey to the lair of the TraHydra," +
                             "but the journey will be perilous.");
+                    System.out.println("Your grade is " + player.getGradeLetter());
                     loc++;
                 } else {
                     loc--;
@@ -112,6 +114,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -147,6 +150,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -182,6 +186,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -217,6 +222,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -252,6 +258,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -287,6 +294,7 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
@@ -322,13 +330,14 @@ public class Driver {
                     System.out.println(tutorial.getOutcome());
 
                     if (tutorial.getWin()) {
+                        System.out.println("Your grade is " + player.getGradeLetter());
                         loc++;
                     } else {
                         loc--;
                     }
 
 
-            } if (loc == 8) {
+            } if (loc == 8 && player.getGrade() >= 100) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
                 Obstacle rock = new Obstacle(trahatt, "TraHydra");
@@ -366,11 +375,14 @@ public class Driver {
                     System.out.println("You have been bested by the TraHydra, barely escaping with your life.");
                     loc--;
                 }
+            } else {
+                loc--;
             }
 
         }
 
-        System.out.println("Congratulations! You have defeated the TraHydra and retaken the land of Thermopylae.");
+        System.out.println("Congratulations! You have defeated the TraHydra and retaken the land of Thermopylae, earning a "
+                + player.getGradeLetter() + " in the process.");
 
     }
 
