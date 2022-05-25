@@ -83,7 +83,7 @@ public class Driver {
 
             else if (loc == 1) {
                     //Tutorial Encounter
-                    int[] compMouseAttributes = {100, 1, 1};
+                    int[] compMouseAttributes = {40, 10, 10};
                     Obstacle compMouse = new Obstacle(compMouseAttributes, "Computer Mouse");
                     Encounter tutorial = new Encounter("A computer mouse approaches you. It looks hungry. You feed it, and it suddenly begins to grow. You wonder if it plans on making you its next meal..." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", compMouse, player);
@@ -118,7 +118,7 @@ public class Driver {
                     }
             } else if (loc == 2) {
                     //Tutorial Encounter
-                    int[] trojanHorseAttributes = {100, 1, 1};
+                    int[] trojanHorseAttributes = {30, 20, 60};
                     Obstacle trojanHorse = new Obstacle(trojanHorseAttributes, "Trojan Horse");
                     Encounter tutorial = new Encounter("A wild Trojan horse has appeared! And it's not the kind you can saddle up... What do you do?" +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", trojanHorse, player);
@@ -153,7 +153,7 @@ public class Driver {
                     }
             } else if (loc == 3) {
                     //Tutorial Encounter
-                    int[] coronaAttributes = {100, 1, 1};
+                    int[] coronaAttributes = {100, 20, 20};
                     Obstacle corona = new Obstacle(coronaAttributes, "Corona");
                     Encounter tutorial = new Encounter("Coronavirus has been spreading through the class, and breaking news says computers can catch Corona now. Your computer has been doing some suspicious coughing. How are you going to fight the virus?" +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", corona, player);
@@ -188,7 +188,7 @@ public class Driver {
                     }
             } else if (loc == 4) {
                     //Tutorial Encounter
-                    int[] duckAttributes = {100, 1, 1};
+                    int[] duckAttributes = {40, 35, 40};
                     Obstacle duck = new Obstacle(duckAttributes, "Rubber Duck");
                     Encounter tutorial = new Encounter("Enough of these pesky bugs. Your rubber duck, bored from listening to your problems for all these years, is ready to rebel. It helped you defeat your coding struggles, now you must defeat it." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", duck, player);
@@ -223,7 +223,7 @@ public class Driver {
                     }
             } else if (loc == 5) {
                     //Tutorial Encounter
-                    int[] robotAttributes = {100, 1, 1};
+                    int[] robotAttributes = {45, 45, 40};
                     Obstacle robot = new Obstacle(robotAttributes, "Robot");
                     Encounter tutorial = new Encounter("It's a bird, it's a plane, it's a... robot? It seems that the robot revolution has begun." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", robot, player);
@@ -258,7 +258,7 @@ public class Driver {
                     }
             } else if (loc == 6) {
                     //Tutorial Encounter
-                    int[] salePersonAttributes = {100, 1, 1};
+                    int[] salePersonAttributes = {55, 60, 50};
                     Obstacle salePerson = new Obstacle(salePersonAttributes, "Sale Person");
                     Encounter tutorial = new Encounter("You asked for a keyboard, and you got a piano. Wrong on several levels. You aren't happy. The sale person isn't happy that you're not happy. The sale person has a weapon." +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", salePerson, player);
@@ -293,7 +293,7 @@ public class Driver {
                     }
             } else if (loc == 7) {
                     //Tutorial Encounter
-                    int[] momAttributes = {100, 1, 1};
+                    int[] momAttributes = {70, 70, 70};
                     Obstacle mom = new Obstacle(momAttributes, "Mom");
                     Encounter tutorial = new Encounter("You dropped your supposedly waterproof phone in a lake. Your mom is angry because it was expensive. How do you deal with your mom?" +
                             "Whatever shall you do?\n", "\nWould you like to:\n1. Fight\n2. Flee\n3. Negotiate\n Enter your choice:", mom, player);
