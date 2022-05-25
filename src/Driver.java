@@ -338,7 +338,7 @@ public class Driver {
                     }
 
 
-            } if (loc == 8 && player.getGrade() >= 100) {
+            } else if (loc == 8 && player.getGrade() >= 100) {
                 //Tutorial Encounter
                 int[] trahatt = {90, 90, 90};
                 Obstacle rock = new Obstacle(trahatt, "TraHydra");
